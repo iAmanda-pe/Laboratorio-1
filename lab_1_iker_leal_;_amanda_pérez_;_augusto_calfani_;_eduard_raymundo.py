@@ -8,12 +8,10 @@ Original file is located at
 
 Breve explicación. Ejercicio 1: Implementar nuevas operaciones
 
-El código define una función llamada `nuevas_op` que recibe como parámetros un `alfabeto` y una `palabra`. La función analiza la palabra para determinar si sus símbolos pertenecen al alfabeto dado, recorriendo cada carácter por medio de un `for` y verificando si se encuentra dentro de la lista de símbolos permitidos.
-
-Por otra parte, cuenta cuántas veces aparecen las letras *"a"* y *"b"* dentro de la palabra mediante `contadores` que se incrementan cada vez que se encuentra uno de esos caracteres.
-
+El código define una función llamada `nuevas_op` que recibe como parámetros un `alfabeto` y una `palabra`. 
+La función analiza la palabra para determinar si sus símbolos pertenecen al alfabeto dado, recorriendo cada carácter por medio de un `for` y verificando si se encuentra dentro de la lista de símbolos permitidos.
+Por otra parte, cuenta cuántas veces aparecen las letras "a" y "b" dentro de la palabra mediante `contadores` que se incrementan cada vez que se encuentra uno de esos caracteres.
 Por último, la función ordena las letras de la palabra alfabéticamente utilizando la función `sorted`, que devuelve los caracteres ordenados, y `join`, que los vuelve a unir en una cadena.
-
 Por último, devuelve un texto con los resultados obtenidos.
 """
 
@@ -47,9 +45,11 @@ alfabeto = ['a', 'b']
 palabra = "abbaba"
 print(nuevas_op(alfabeto,palabra))
 
-"""**Breve explicación. Ejercicio 2: Definir un nuevo lenguaje.**
+"""Breve explicación. Ejercicio 2: Definir un nuevo lenguaje.
 
-La modificación se realiza en la función `pertenece_L1`, que ahora verifica que la cantidad de letras *"b"* en una palabra sea **impar**. Para ello se utiliza `palabra.count('b') % 2 == 1`, que cuenta cuántas *"b"*  hay y usa el operador módulo para comprobar si el número es impar. De esta forma, al generar el lenguaje solo se seleccionan las palabras que cumplen con esta nueva regla.
+La modificación se realiza en la función `pertenece_L1`, que ahora verifica que la cantidad de letras *"b"* en una palabra sea **impar**. 
+Para ello se utiliza `palabra.count('b') % 2 == 1`, que cuenta cuántas *"b"*  hay y usa el operador módulo para comprobar si el número es impar. 
+De esta forma, al generar el lenguaje solo se seleccionan las palabras que cumplen con esta nueva regla.
 """
 
 #EJERCICIO 2
@@ -73,9 +73,11 @@ tamaño = 4
 L1 = generar_lenguaje(alfabeto, tamaño, pertenece_L1)
 print("L1:", L1)
 
-"""**Breve explicación. Ejercicio 3: Implementar una nueva gramática.**
+"""Breve explicación. Ejercicio 3: Implementar una nueva gramática.
 
-Se modificó la regla recursiva para que, a partir de cada palabra generada previamente, se agregue una *"a"* y una *"b"*. De esta forma, la función construye nuevas palabras combinando ambos símbolos en cualquier orden. Así, la gramática genera todas las combinaciones posibles de *"a"* y *"b"* hasta la longitud indicada.
+Se modificó la regla recursiva para que, a partir de cada palabra generada previamente, se agregue una "a" y una "b". 
+De esta forma, la función construye nuevas palabras combinando ambos símbolos en cualquier orden. 
+Así, la gramática genera todas las combinaciones posibles de "a" y "b" hasta la longitud indicada.
 """
 
 #EJERCICIO 3
